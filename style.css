@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+* {
+  padding: 2px;
+  margin: 0;
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+.body-about {
+  background: #f4f9f6 url('pictureme.png');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  height: 50%;
+  bottom: -52%;
+  opacity: 0.6;
+}
+div img {
+  width: 150px;
+  height: 150px;
+  background: ##f4f9f6;
+}
+.navbar ul {
+  background: ##f4f9f6;
+  text-align: center;
+  border-bottom-right-radius: 25px;
+  width: 150px;
+  margin-top: -10px;
+}
+.navbar ul li{
+  list-style: none;
+}
+.navbar ul li a {
+  display: inline-block;
+  color: #777;
+  text-decoration: none;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+.navbar ul li a:hover {
+  color: #0000ff;
+}
+.navbar ul .active a {
+  color: #0000ff;
+}
+.social a {
+  padding: 5px;
+  text-decoration: none;
+
+}
+.social a:hover i{
+  color: #019791;
+  transform: scale(1.05);
+}
+.social a i {
+  color:#777;
+  font-size: 1.1rem;
+  transition: transform 500ms;
+}
+.banner {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+.banner h5 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.8rem;
+    color: #acaaff;
+}
+.banner h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+}
+.banner h1 span {
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+  background-color: rgba(1, 151, 145, 0.5);
+}
+.banner p {
+  font-family: 'Staatliches', sans-serif;
+}
+.about {
+  max-width: 800px;
+  width: 90%;
+  margin: 2vh 100px;
+  text-align: justify;
+  background-color: rgba(1, 151, 145, 0.5);
+}
+.about p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+}
+.about h4 {
+  font-family: 'Lobster', cursive;
+  font-size: 1.8rem;
+}
+/*for small screen*/
+@media screen and (max-width: 460px) {
+  .body-about {
+    background-size: 150%;
+    background-position: center;
+  }
+  .navbar {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .navbar ul {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px
+  }
+}
+.hire {
+  width: 65%;
+  float: left;
+
+  min-height: 400px;
+
+}
+.right-side {
+  max-width: 30%;
+  background-color: #000;
+  min-height: 400px;
+  float: right;
+
+}
+.contain {
+  background: #aca url('olabiisi.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  width: 100%;
+  height: 20%;
+  min-height: 400px;
+}
